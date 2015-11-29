@@ -1,0 +1,17 @@
+S -> NP VP | Aux NP VP | VP
+
+NP -> Pronoun | Proper | Det Nominal
+
+Nominal -> Noun | Nominal Noun | Nominal PP
+
+VP -> Verb | Verb NP | Verb NP PP | Verb PP | VP PP
+
+PP -> Preposition NP
+
+Det -> that | this | a
+Noun -> book | flight | meal | money
+Verb -> book | include | prefer
+Pronoun -> I | she | he
+Proper -> Houston | NWA
+Aux -> does
+Preposition -> from | to | on | near | through

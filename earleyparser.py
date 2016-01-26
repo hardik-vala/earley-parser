@@ -161,7 +161,7 @@ class EarleyState(object):
 			(', [%d, %d])' % (state.sent_pos, state.chart_pos)))
 
 		return (str_helper(self) +
-			' (' + ','.join(str_helper(s) for s in self.back_pointers) + ')')
+			' (' + ', '.join(str_helper(s) for s in self.back_pointers) + ')')
 
 	def next(self):
 		"""
@@ -314,9 +314,6 @@ class EarleyParse(object):
 						self.predictor(state, i)
 				else:
 					self.completer(state, i)
-
-		# DEBUG
-		# print self.chart
 
 	def has_parse(self):
 		"""
